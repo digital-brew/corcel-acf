@@ -21,10 +21,12 @@ For more information about how Corcel works please visit [the repository](http:/
 
 # Version Compatibility
 
- Corcel    | Laravel  | PHP
-:----------|:---------|:----------
- `^4.0`    | 7.x      | `>=7.2`
- `^5.0`    | 8.x      | `>=7.3`
+ Corcel    | Laravel | PHP
+:----------|:--------|:----------
+ `^4.0`    | 7.x     | `>=7.2`
+ `^5.0`    | 8.x     | `>=7.3`
+ `^6.0`    | 9.x     | `>=7.3`
+ `^7.0`    | 10.x    | `>7.4`
 
 # Installation
 
