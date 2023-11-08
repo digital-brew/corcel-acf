@@ -129,6 +129,13 @@ abstract class BasicField
      */
     public function fetchFieldType($fieldKey)
     {
+        // try programmatically first
+        $f = get_field_object($fieldKey, $this->post->ID);
+        if($f && isset($f['type'])) {
+            $this->type = $f['type'];
+            return $this->type;
+        }
+
         $post = Post::on($this->post->getConnectionName())
                    ->orWhere(function ($query) use ($fieldKey) {
                        $query->where('post_name', $fieldKey);
